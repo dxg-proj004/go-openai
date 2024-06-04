@@ -24,7 +24,9 @@ const (
 
 const AzureAPIKeyHeader = "api-key"
 
-const defaultAssistantVersion = "v1" // This will be deprecated by the end of 2024.
+// If tools or files functions are used, it must be migrated according to the Migration Guide.
+// see https://platform.openai.com/docs/assistants/migration
+const defaultAssistantVersion = "v2"
 
 // ClientConfig is a configuration of a client.
 type ClientConfig struct {
