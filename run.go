@@ -30,10 +30,10 @@ type Run struct {
 
 	Temperature *float32 `json:"temperature,omitempty"`
 	// The maximum number of prompt tokens that may be used over the course of the run.
-	// If the run exceeds the number of prompt tokens specified, the run will end with status 'complete'.
+	// If the run exceeds the number of prompt tokens specified, the run will end with status 'incomplete'.
 	MaxPromptTokens int `json:"max_prompt_tokens,omitempty"`
 	// The maximum number of completion tokens that may be used over the course of the run.
-	// If the run exceeds the number of completion tokens specified, the run will end with status 'complete'.
+	// If the run exceeds the number of completion tokens specified, the run will end with status 'incomplete'.
 	MaxCompletionTokens int `json:"max_completion_tokens,omitempty"`
 	// ThreadTruncationStrategy defines the truncation strategy to use for the thread.
 	TruncationStrategy *ThreadTruncationStrategy `json:"truncation_strategy,omitempty"`
